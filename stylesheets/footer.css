@@ -1,0 +1,34 @@
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+
+.footer-content img {
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    border-radius: 30%;
+}
+
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-bar {
+    width: 900px;
+    height: 20px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.footer-bar img {
+    padding: 0px 5px 5px 30px;
+}

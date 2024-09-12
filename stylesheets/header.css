@@ -1,0 +1,73 @@
+
+/* HEADER  */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    /* margin: 10px; */
+    padding: 10px;
+    position: fixed;
+    background-color: #fff;
+    height: 15vh;
+    z-index: 10;
+    border-bottom: #ebcfa9 4px solid;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo img {
+    width: 8%;
+}
+
+.logo p {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.topbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-nav li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.topbar-nav li:hover {
+    border-bottom: #ebcfa9 4px solid;
+}
+
+.topbar a img {
+    width: 30px;
+    margin: 10px;
+}
+.header-content {
+    margin-top: 15vh;
+    height: 60vh;
+    /* background-color: #d3ab9a; */
+    background-image: url(../img/boutique/tartes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content h1, .header-content p {
+    margin-top: 20px;
+}
+
+.header-content p {
+    background-color: #ffffff8f;
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+}

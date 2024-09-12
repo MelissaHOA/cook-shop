@@ -1,0 +1,58 @@
+/* STYLES 
+color: #e2d9bf;  BEIGE
+color: #612f2f;  ROUGE FONCE
+color: #998e6e;  MARRON
+
+*/
+
+
+/* LES IMPORTS  */
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+
+/* LAYOUT  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    /* background-color: #ebcfa9; */
+    background-color: #998e6e;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

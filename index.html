@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOK SHOP</title>
+    <meta name="description" content="Vente de patisserie maison préparé directement dans notre boutique sur Toulouse">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/application.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- ____________TOP BAR LOGO ________________ -->
+            <div class="topbar">
+                <div class="logo">
+                    <img src="img/logo/logo01.png" alt="logo">
+                    <p>Cook Shop</p>
+                </div>
+                <!--______________ NAVIGATION TOP BAR___________  -->
+                <div class="nav">
+                    <ul class="topbar-nav">
+                        <li>Accueil</li>
+                        <li> <a href="#biscuits">Biscuits</a> </li>
+                        <li> <a href="#cakes">Cakes</a> </li>
+                        <li><a href="#entremets">Entremets</a></li>
+                        <li><a href="#tartes">Tartes</a></li>
+                    </ul>
+                </div>
+                <!--____________________ CONNEXION ____________________ -->
+                <a href="#"><img src="img/icon/person.svg" alt="icon personne" class="topbar-connexion"></a>
+                <!--_____PANIER -> FAIRE UNE POP UP (en attente) FAIRE COMPTEUR__ --> 
+                 <p class="count-product-purchase">0</p>
+                 <a href="#purchase"><img src="img/icon/shopping.svg" alt="icon achat" class="all-purchase"></a> 
+            </div>
+            <!-- ____________TITRE DE PAGE ET DESCRIPTION SITE ____________ -->
+            <div class="header-content">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente facere fuga est culpa, qui earum. <br> Nisi recusandae velit officia?</p>
+            </div>
+        </header>
+        <main>
+            <!--________________ BARRE DE RECHERCHE_________________  -->
+            <div class="search"><input type="text"> <img src="img/icon/search.svg" alt="icon empoule recherche"></div>
+            <div class="top-sales">
+            <!-- _____________LE TOP DES VENTES _____________ -->
+                <h2>Le top des ventes</h2>
+                <div class="top-sales-products">
+                    <div class="product">
+                        <img src="img/biscuits/macarons-7716584_1280.jpg" alt="macarons">
+                        <div class="product-content">
+                            <p class="title-product">Macarons <br> Boite de 12 </p>
+                            <p class="price-product">14€</p>
+                            <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-01">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/cakes/cupcakes-fraises.jpg" alt="cupcakes-fraises">
+                        <div class="product-content">
+                            <p class="title-product">Cupcakes aux Fraises <br> Boite de 6 </p>
+                            <p class="price-product">24€</p>
+                            <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-07">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/entremets/sugar-3119424_1280.jpg" alt="Cheese-cake">
+                        <div class="product-content">
+                            <p class="title-product">Cheese-Cake <br> 8 parts </p>
+                            <p class="price-product">32€</p>
+                            <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-13">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/entremets/verrine-tiramissu.jpg" alt="Tiramissu">
+                        <div class="product-content">
+                            <p class="title-product">Verrine Tiramissu <br> Lot de 12 </p>
+                            <p class="price-product">26€</p>
+                            <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-14">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="img/biscuits/cinnamon-roll.jpg" alt="roulé cannelle">
+                        <div class="product-content">
+                            <p class="title-product">Roulé à la cannelle <br> Boite de 4 </p>
+                            <p class="price-product">16€</p>
+                            <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-05">
+                        </div>
+                    </div>
+                </div>
+                <!-- ______________BOUTONS DE TOUS LES PRODUITS ______________ -->
+                <a href="#all-product" id="button-all-product">Voir tous les produits</a>
+            </div>
+            <!-- ________________TOUTES LES CATEGORIES__________________  -->
+            <div class="all-categories">
+                <h2>Vente par catégories</h2>
+                <div class="all-categories-content">
+                    <div class="categories" id="biscuits">
+                        <p>Biscuits</p>
+                    </div>
+                    <div class="categories" id="cakes">
+                        <p>Cakes</p>
+                    </div>
+                    <div class="categories" id="entremets">
+                        <p>Entremets</p>
+                    </div>
+                    <div class="categories" id="tartes">
+                        <p>Tartes</p>
+                    </div>
+                </div>
+            </div">
+            <!--__________________ TOUS LES PRODUITS ___________________ -->
+             <div class="all-product"  id="all-product" >
+                <div class="top-sales" id="all-biscuits">
+                    <!--______________ TOUS LES PRODUITS -> LES BISCUITS ____________-->
+                    <h2>Les biscuits</h2>
+                    <div class="top-sales-products">
+                        <div class="product">
+                            <img src="img/biscuits/macarons-7716584_1280.jpg" alt="macarons">
+                            <div class="product-content">
+                                <p class="title-product">Macarons <br> Boite de 12 </p>
+                                <p class="price-product">14€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-01">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/biscuits/canele-5856024_1280.jpg" alt="canele">
+                            <div class="product-content">
+                                <p class="title-product">Cannelé Bordelais <br> Boite de 6 </p>
+                                <p class="price-product">18€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-02">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/biscuits/cantuccini-6828457_1280.jpg" alt="Biscuit amande">
+                            <div class="product-content">
+                                <p class="title-product">Biscuits aux amandes <br> 30 pièces</p>
+                                <p class="price-product">14€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-03">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/biscuits/cookie-8954756_1280.jpg" alt="Cookies">
+                            <div class="product-content">
+                                <p class="title-product">Cookies chocolat <br> Lot de 12 </p>
+                                <p class="price-product">12€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-04">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/biscuits/cinnamon-roll.jpg" alt="roulé cannelle">
+                            <div class="product-content">
+                                <p class="title-product">Roulé à la cannelle <br> Boite de 4 </p>
+                                <p class="price-product">16€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-05">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!--_______________ TOUS LES PRODUITS -> LES CAKES_______________ -->
+                <div class="top-sales" id="all-cakes">
+                    <h2>Les cakes</h2>
+                    <div class="top-sales-products">
+                        <div class="product">
+                            <img src="img/cakes/cakes-7916601_1280.jpg" alt="cakes myrtille">
+                            <div class="product-content">
+                                <p class="title-product">Mini cake myrtille <br> Boite de 6 </p>
+                                <p class="price-product">22€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-06">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/cakes/cupcakes-fraises.jpg" alt="cupcakes-fraises">
+                            <div class="product-content">
+                                <p class="title-product">Cupcakes aux Fraises <br> Boite de 6 </p>
+                                <p class="price-product">24€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-07">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/cakes/cupcakes-5116009_1280.jpg" alt="Cup cake chocolat">
+                            <div class="product-content">
+                                <p class="title-product">Cup-cake Chocolat <br> Boite de 6 </p>
+                                <p class="price-product">24€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-08">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/cakes/cupcakes-8875093_1280.png" alt="Cup cake">
+                            <div class="product-content">
+                                <p class="title-product">Cup-cake Noisette <br> Boite de 6 </p>
+                                <p class="price-product">26€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-09">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/cakes/lemon-cake-8274419_1280.jpg" alt="lemon-cake">
+                            <div class="product-content">
+                                <p class="title-product">Cake au citron <br> 12 parts </p>
+                                <p class="price-product">18€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--______________ TOUS LES PRODUITS -> LES ENTREMETS_______________ -->
+                <div class="top-sales" id="all-entremets">
+                    <h2>Les entremets</h2>
+                    <div class="top-sales-products">
+                        <div class="product">
+                            <img src="img/entremets/ai-generated-8266497_1280.jpg" alt="Gateaux">
+                            <div class="product-content">
+                                <p class="title-product">Gateaux fruits rouges <br> Boite de 4 </p>
+                                <p class="price-product">21€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-11">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/entremets/ai-generated-8982206_1280.jpg" alt="gateaux">
+                            <div class="product-content">
+                                <p class="title-product">Gateaux Chocolat <br> Boite de 6 </p>
+                                <p class="price-product">28€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-12">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/entremets/sugar-3119424_1280.jpg" alt="Cheese-cake">
+                            <div class="product-content">
+                                <p class="title-product">Cheese-Cake <br> 8 parts </p>
+                                <p class="price-product">32€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-13">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/entremets/verrine-tiramissu.jpg" alt="Tiramissu">
+                            <div class="product-content">
+                                <p class="title-product">Verrine Tiramissu <br> Lot de 12 </p>
+                                <p class="price-product">26€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-14">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- __________________TOUS LES PRODUITS -> LES TARTES_______________ -->
+                <div class="top-sales" id="all-tartes">
+                    <h2>Les tartes</h2>
+                    <div class="top-sales-products">
+                        <div class="product">
+                            <img src="img/tartes/cake-3970696_1280.jpg" alt="tarte">
+                            <div class="product-content">
+                                <p class="title-product">Tartelettes Framboises <br> Boite de 6 </p>
+                                <p class="price-product">22€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-15">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/tartes/cake-4668936_1280.jpg" alt="tarte">
+                            <div class="product-content">
+                                <p class="title-product">Tartelettes Vanille <br> Boite de 6 </p>
+                                <p class="price-product">20€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-16">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="img/tartes/tart-2721003_1280.jpg" alt="tarte">
+                            <div class="product-content">
+                                <p class="title-product">Tartelettes Citron meringué <br> Boite de 6 </p>
+                                <p class="price-product">18€</p>
+                                <img src="img/icon/add_shopping.svg" alt="ajout shopping" id="add-product-17">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+             </div>
+             <!-- ____________POP UP PANIER _____________ -->
+             <div class="purchase" id="purchase">
+                <div class="title-purchase">
+                    <h3>Mon Panier</h3>
+                    <p id="close-purchase">X</p>
+                </div>
+                <div class="purchase-content">
+                    <!-- ____________TEMPORAIRE TABLEAU LSTE ERTICLE PANIER ________ -->
+                    <table class="list-product-add" >
+                        <thead>
+                            <tr>
+                                <th>Nom du produit</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                                <th></th>
+                                <th>Prix Total</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="4">TOTAL DE LA COMMANDE</th>
+                                <td id="total-price">0.00 €</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <button id="validate-purchase">Valider mon panier</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+             </div>
+        </main>
+        <!-- _____________FOOTER DU SITE_____________ -->
+        <footer>
+            <div class="footer-content">
+                <img src="img/boutique/pie-8396728_1280.jpg" alt="">
+                <div>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Sunt facere exercitationem nihil esse, quos quaerat eius ad quibusdam tempora beatae sed soluta itaque accusamus adipisci nulla officia commodi totam inventore voluptas eos? Explicabo dicta quo vitae impedit pariatur velit tempora.</p>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <img src="img/icon/copyright_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="copyrigth" >
+                <p>2024 - FMS - Module Web</p>
+                <img src="img/icon/stylus_note_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon stylet">
+                <p>Hoarau Mélissa</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

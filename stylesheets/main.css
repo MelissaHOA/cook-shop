@@ -1,0 +1,248 @@
+/* _________________BARRE DE RECHERCHE_________________  */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 800px;
+    padding: 5px;
+    border: 2px solid #e2d9bf;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.search input {
+    width: 800px;
+    border: none;
+    color: rgb(151, 151, 151);
+}
+
+/*_______________ CONTENU TOP 5 DES VENTES + TOUS LES PRODUITS_______ */
+.all-product {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.top-sales {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-sales h2 , .all-categories h2 {
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: #e2d9bf 3px solid;
+}
+
+.top-sales-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-sales a {
+    padding: 5px;
+    margin-bottom: 30px;
+    background-color:#e2d9bf;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-sales a:hover{
+    background-color: #fff;
+    border: 2px solid #e2d9bf;
+    color: #e2d9bf;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #e2d9bf;
+}
+
+.product img {
+    width: 200px;
+    height: 150px;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-product {
+    font-weight: 500;
+}
+
+.product-content img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/*___________________  CATEGORIES ________________ */
+
+.all-categories-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px ;
+    width: 1100px;
+}
+
+.categories {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    /* background-color: #e2d9bf; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.categories:hover {
+    opacity: 50%;
+}
+
+.categories p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #612f2f;
+    background-color: #ffffffcc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.categories p:hover {
+    background-color: #fff;
+}
+
+#biscuits {
+    background-image: url(../img/boutique/cookie-1864642_1280.jpg);
+}
+
+#cakes {
+    background-image: url(../img/boutique/cupcakes-6218437_1280.jpg);
+}
+
+#entremets {
+    background-image: url(../img/boutique/cake-8233676_1280.jpg);
+}
+
+#tartes {
+    background-image: url(../img/boutique/berries-5269227_1280.jpg);
+}
+
+#biscuits , #cakes , #entremets , #tartes {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#all-biscuits , #all-cakes , #all-entremets , #all-tartes{
+    display: none;
+}
+
+
+/* ____________________POP UP PANIER_______________  */
+.purchase {
+    background-color: #fff ;
+    /* opacity: 80%; */
+    border: solid 4px #e2d9bf ;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 50%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    margin: 30px;
+    z-index: 200;
+}
+
+#purchase {
+    display: none;
+}
+
+.title-purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #612f2f;
+
+}
+
+.title-purchase h3 {
+    text-transform: uppercase;
+}
+
+.title-purchase p {
+    font-weight: 700;
+    background-color: #e2d9bf;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.purchase-content {
+   background-color: #e2d9bf;
+    /* border-color: #e2d9bf; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.purchase-content thead tr th {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: #fff solid 2px;
+}
+
+.purchase-content tbody tr th {
+    text-align: left;
+    padding: 10px;
+}
+
+.purchase-content tbody tr td , .purchase-content tfoot tr td{
+    text-align: center;
+    padding: 10px;
+}
+
+.purchase-content tbody button {
+    width: 25px;
+    height: 25px;
+}
+
+.purchase-content tfoot tr th , .purchase-content tfoot tr td{
+    padding-top: 20px;
+    border-top: 2px solid #fff;
+}
+ 
+.purchase-content tfoot button {
+    width: 200px;
+    height: 35px;
+    border: #fff 3px solid;
+    text-transform: uppercase;
+    background-color: #612f2f;
+    color: #fff;
+}
+
+.purchase-content tfoot button:hover {
+    border: #612f2f 3px solid;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #612f2f;
+}
