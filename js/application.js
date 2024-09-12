@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     // ____AJOUTER ARTICLE PANIER 
 
-    //________autre méthode de sélection enfant jquery
+    //________autre méthode de sélecteur enfant jquery
     // $(".product-content").on("click", "img", function (event) {
     //     alert('a');
     // });
@@ -70,7 +70,7 @@ $(document).ready(function() {
     $(".product-content").children("img").click(function(){
         // récupère l'id du produit
         var id = $(this).attr('id'); 
-        //récupère le titre + prix du produit (prev -> précédent)
+        //récupère le titre + prix du produit 
         var title = $(this).prev().prev().text();
         var price = $(this).prev().text();
         //supprime le €
@@ -98,7 +98,7 @@ $(document).ready(function() {
     }
 
     // rattache la fonction au bouton de validation
-    // Ferme la POPUP panier
+    // Fermeture de la POPUP panier
     $("#validate-purchase").click(function() {
         validatePurchase()
         $("#purchase").hide();
@@ -166,8 +166,7 @@ function updateCartDisplay(){
         if (quantity > 0 ) {
             // recupération des détails produits
             let title = $("#" + id).prev().prev().text();
-            let price = parseFloat($("#" + id).prev().text().slice(0, -1)); // Supprimer le symbole €
-
+            let price = parseFloat($("#" + id).prev().text().slice(0, -1)); // Supprime €
 
             // ajouter le produit au panier
             cartContent +=`

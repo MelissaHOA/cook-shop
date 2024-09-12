@@ -105,7 +105,6 @@
     width: 250px;
     height: 200px;
     margin: 10px;
-    /* background-color: #e2d9bf; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,10 +155,9 @@
 }
 
 
-/* ____________________POP UP PANIER_______________  */
+/* ____________________POPUP PANIER_______________  */
 .purchase {
     background-color: #fff ;
-    /* opacity: 80%; */
     border: solid 4px #e2d9bf ;
     display: flex;
     flex-direction: column;
@@ -198,7 +196,6 @@
 
 .purchase-content {
    background-color: #e2d9bf;
-    /* border-color: #e2d9bf; */
     display: flex;
     flex-direction: column;
     padding: 10px;
